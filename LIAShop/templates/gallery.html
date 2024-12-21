@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Vincent van Gogh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background: #ffcc00;
+        }
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .home-button:hover {
+            background: #0056b3;
+        }
+        .gallery {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px; 
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 300px; 
+        }
+
+        .gallery-item img {
+            max-width: 100%; 
+            max-height: 180px;
+            object-fit: contain; 
+            align-self: center; 
+            margin: auto; 
+        }
+
+        .gallery-item h3 {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/home/" class="home-button">Home</a>
+        <h1>Gallery of Vincent van Gogh</h1>
+    </header>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Starry_Night_Over_the_Rhone.jpg/774px-Starry_Night_Over_the_Rhone.jpg" alt="Starry Night">
+            <h3>Starry Night Over the Rhône</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Vincent_van_Gogh_%281853-1890%29_-_Wheat_Field_with_Crows_%281890%29.jpg" alt="Wheatfield with Crows">
+            <h3>Wheatfield with Crows</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.whiteclouds.com/wp-content/uploads/2023/12/CW9132-sunflowers-by-vincent-van-gogh.jpg" alt="Sunflowers">
+            <h3>Sunflowers</h3>
+        </div>
+    </div>
+</body>
+</html>
